@@ -4,35 +4,33 @@ html{
 
 body{
     background: url(../img/bg-desktop.svg) no-repeat;
+    background-size: cover;
     background-color: hsl(257, 40%, 49%);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     max-width: 1440px;
     display: grid;
-    grid-template-areas: "logo logo"
-                         "services services"
-                         " . footer";
+    grid-template-areas: "logo logo logo"
+                         "services services services"
+                         " . . footer ";
 }
 
 @media (max-width:425px){
     body{
         background: url(../img/bg-mobile.svg) no-repeat;
+        background-size: cover;
         background-color: hsl(257, 40%, 49%);
-        max-width: 375px;
+    
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    .services{
-        display: flex;
-        flex-direction: column;
-    }
 }
 .logo img{
     grid-area: logo;
     margin-left: 70px;
-    margin-top: 56px;
+    margin-top: 20px;
     width: 215px;
 }
 
@@ -47,42 +45,80 @@ body{
 .services{
     grid-area: services;
     display: flex;
-    margin-top: 80px;
+}
+
+@media (max-width:425px){
+    .services{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
 }
 
 .services .illustration img{
     margin-left: 74px;
-    max-width: 710px;
+    max-width: 709px;
+    min-width: 315px;
+    width: 100%;
 }
 
 @media (max-width:425px){
     .services .illustration img{
-    width: 303px;
-    margin-top: -26px;
-    margin-left: 37px;
+        margin: 0;
+        padding: 0;
+        max-width: 250px;
+        width: 100%;
+    
+    }
+
+    .illustration{
+        display: flex;
+        justify-content: center;
     }
 }
 
 .services .sobre{
-    margin-left: 52px;
+    padding-left: 100px;
     color: #ffffff;
-    margin-right: 90px;
+    
+}
+
+@media (max-width:425px){
+    .services .sobre{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .sobre{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .services .sobre h1{
     font-size: 39.5px;
     font-weight: 600;
     margin-top: 43px;
+    width: 500px;
 }
 
 @media (max-width:425px){
     .services .sobre h1{
         width: 303px;
         font-size: 24px;
+        margin: 0;
         margin-top: 55px;
-        margin-left: -15px;
         text-align: center;
+        
     }
+
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+
+
 }
 
 .services .sobre p{
@@ -90,6 +126,9 @@ body{
     font-weight: 400;
     padding-top: 25px;
     font-size: 18px;
+    width: 400px;
+    margin-right: 90px;
+    
 }
 
 @media (max-width:425px){
@@ -97,9 +136,13 @@ body{
         text-align: center;
         line-height: 24px;
         font-size: 16px;
-        margin-top: -10px;
-        margin-left: -19px;
-        margin-right: -55px;
+        width: 305px;
+        margin:0;
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -120,28 +163,37 @@ body{
 }
 
 @media (max-width:425px){
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 24px;
-    margin-left: 36px;
-    width: 200px;
-    height: 40px;
-    font-size: 13px;
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+        }
+    .botao {
+        display: flex;
+        justify-content: center;
     }
+
 }
+
 
 .footer {
     grid-area: footer;
     display: flex;
     justify-content: flex-end;
     margin-right: 80px;
+    margin-bottom: 20px;
 }
 
 @media (max-width:425px){
     .footer {
-        margin-right: 135px;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin: 0;
     }
 }
 
@@ -164,12 +216,18 @@ body{
 }
 
 @media (max-width:425px){
+
+    .social{
+        display: flex;
+        gap: 7px;
+    }
     .footer .social i{
         font-size: 1.3rem;
         width: 29px;
         height: 29px;
         margin-top: 64px;
-        margin-left: 6px;
-        line-height: 29px; 
+        line-height: 29px;
+        margin-left: 0;
+        margin-bottom: 30px;
     }
 }
