@@ -57,7 +57,7 @@ body{
 
 .services .illustration img{
     margin-left: 74px;
-    max-width: 709px;
+    max-width: 650px;
     min-width: 315px;
     width: 100%;
 }
@@ -204,7 +204,6 @@ body{
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 50%;
-    margin-top: 15px;
     margin-left: 13px;
     text-align: center;
     line-height: 40px;
