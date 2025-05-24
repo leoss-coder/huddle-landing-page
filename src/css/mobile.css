@@ -1,0 +1,130 @@
+@media (max-width:425px){
+    body{
+        background: url(../img/bg-mobile.svg) no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media (max-width:425px){
+    .logo img{
+        width: 130px;
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+}
+
+@media (max-width:425px){
+    .services{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
+
+@media (max-width:425px){
+    .services .illustration img{
+        margin: 0;
+        padding: 0;
+        max-width: 250px;
+        width: 100%;
+    
+    }
+
+    .illustration{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:425px){
+    .services .sobre{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .sobre{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:425px){
+    .services .sobre h1{
+        width: 303px;
+        font-size: 24px;
+        margin: 0;
+        margin-top: 55px;
+        text-align: center;
+        
+    }
+
+    .title{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:425px){
+    .services .sobre p{
+        text-align: center;
+        line-height: 24px;
+        font-size: 16px;
+        width: 305px;
+        margin:0;
+    }
+
+    .text{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:425px){
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 24px;
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+        }
+    .botao {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:425px){
+    .footer {
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin: 0;
+    }
+}
+
+@media (max-width:425px){
+
+    .social{
+        display: flex;
+        gap: 7px;
+    }
+    .footer .social i{
+        font-size: 1.3rem;
+        width: 29px;
+        height: 29px;
+        margin-top: 64px;
+        line-height: 29px;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+}
+
