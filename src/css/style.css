@@ -81,13 +81,15 @@ body{
 .footer {
     grid-area: footer;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
     margin-right: 80px;
     margin-bottom: 20px;
 }
 
-
+.social{
+    display: flex;
+    gap: 13px;
+}
 
 .footer .social i{
     color: #ffffff;
@@ -96,7 +98,6 @@ body{
     height: 40px;
     border: 1px solid #ffffff;
     border-radius: 50%;
-    margin-left: 13px;
     text-align: center;
     line-height: 40px;
 }
